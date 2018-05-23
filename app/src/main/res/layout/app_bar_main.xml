@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <include layout="@layout/content_main"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal"
+        android:background="@android:color/white"
+        android:padding="@dimen/dimen_8dp"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_portfolio"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_portfolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@android:color/black"
+                android:src="@drawable/ic_action_announcement" />
+            <TextView
+                android:id="@+id/tv_portfolio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_portfolio"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize_12sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_market"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@android:color/black"
+                android:src="@drawable/ic_action_announcement" />
+            <TextView
+                android:id="@+id/tv_market"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_market"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize_12sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_newsfeed"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_newsfeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@android:color/black"
+                android:src="@drawable/ic_action_announcement" />
+            <TextView
+                android:id="@+id/tv_newsfeed"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_newsfeed"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize_12sp"
+                />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_leaderboard"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:clickable="true"
+            android:foreground="?android:attr/selectableItemBackground"
+            android:focusable="true">
+
+            <ImageView
+                android:id="@+id/iv_leaderboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="@android:color/black"
+                android:src="@drawable/ic_action_announcement" />
+            <TextView
+                android:id="@+id/tv_leaderboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/label_leaderboard"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/textSize_12sp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
